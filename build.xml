@@ -1,12 +1,13 @@
 <project name="guestbook-clj" basedir="." default="test">
 
   <property environment="env" />	
-  <property name="sdk.dir" location="../appengine-java-sdk-1.2.0" />
-  <property name="classes.dir" value="war/WEB-INF/classes" />
+<!-- Replace the following sdk dir to wherever you have appengine installed -->
+  <property name="sdk.dir" location="/Applications/appengine-java-sdk-1.3.0" />
+  <property name="classes.dir" value="lib/" />
   <property name="lib.dir" value="war/WEB-INF/lib" />
   <property name="src.dir" value="src" />
   <property name="test.dir" value="test" />
-  <property name="compojure.dir" value="/Users/hume/dev/compojure" />
+  <property name="compojure.dir" value="lib/" />
   
   <import file="${sdk.dir}/config/user/ant-macros.xml"/>
   
@@ -29,9 +30,9 @@
   </target>
   
   <target name="copyjars">
-    <copy file="${sdk.dir}/lib/user/appengine-api-1.0-sdk-1.2.0.jar" todir="${lib.dir}" />
+    <copy file="${sdk.dir}/lib/user/appengine-api-1.0-sdk-1.3.0.jar" todir="${lib.dir}" />
     <copy file="${compojure.dir}/compojure.jar" todir="${lib.dir}" />
-    <copy file="/Users/hume/dev/tw/g/appengine-clj/appengine-clj.jar" todir="${lib.dir}" />
+    <copy file="lib/lein-gae.jar" todir="${lib.dir}" />
     <copy todir="${lib.dir}">
       <filelist dir="${compojure.dir}/deps" files="clojure.jar clojure-contrib.jar commons-io-1.4.jar commons-codec-1.3.jar" />
     </copy>   
