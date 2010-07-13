@@ -4,13 +4,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
     version="2.5">
-  <display-name>Clojure Guestbook</display-name>
+  <display-name>Clojure blank</display-name>
   <servlet>
-    <servlet-name>gb</servlet-name>
-    <servlet-class>guestbook.servlet</servlet-class>
+    <servlet-name>core</servlet-name>
+    <servlet-class>core</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>gb</servlet-name>
+    <servlet-name>core/servlet-name>
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
 </web-app>

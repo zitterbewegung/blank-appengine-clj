@@ -10,17 +10,13 @@ mvn install:install-file -DgroupId=com.google.appengine \
 -Dfile=$1/lib/user/appengine-api-labs-1.3.5.jar
 
 mvn install:install-file -DgroupId=com.google.appengine \
--DartifactId=appengine-api-labs -Dversion=1.3.5 -Dpackaging=jar \
+-DartifactId=appengine-api-1.0-sdk -Dversion=1.3.5 -Dpackaging=jar \
 -Dfile=$1/lib/user/appengine-api-1.0-sdk-1.3.5.jar
 
 mvn install:install-file -DgroupId=com.google.appengine \
--DartifactId=appengine-api-labs -Dversion=1.3.5 -Dpackaging=jar \
--Dfile=$1/lib/user/appengine-api-1.0-sdk-1.3.5.jar
+-DartifactId=appengine-api-stubs -Dversion=1.3.5 -Dpackaging=jar \
+-Dfile=$1/lib/impl/appengine-api-stubs.jar
 
 mvn install:install-file -DgroupId=com.google.appengine \
--DartifactId=appengine-api-labs -Dversion=1.3.5 -Dpackaging=jar \
--Dfile=$1/lib/impl/appengine-api-stubs-sdk-1.3.5.jar
-
-mvn install:install-file -DgroupId=com.google.appengine \
--DartifactId=appengine-api-labs -Dversion=1.3.5 -Dpackaging=jar \
+-DartifactId=appengine-local-runtime -Dversion=1.3.5 -Dpackaging=jar \
 -Dfile=$1/lib/impl/appengine-local-runtime.jar
