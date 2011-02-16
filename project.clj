@@ -1,7 +1,6 @@
 (defproject blank-appengine-clj "1"
   :description "Blank slate for starting out with clojure on google app engine."
   :namespaces [core]
-  :dev-dependencies [[swank-clojure "1.2.1"]]
   :dependencies [[compojure "0.5.2"]
                  [ring/ring-servlet "0.2.1"]
                  [hiccup "0.3.1"]
