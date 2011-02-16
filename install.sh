@@ -4,7 +4,7 @@ if [ $# -lt 1] ; then
     echo -e "Please provide the root directory of your app engine installation to continue"
     exit 1
 fi
-appengineversion="1.4.0"
+appengineversion="1.4.2"
 
 mvn install:install-file -DgroupId=com.google.appengine \
 -DartifactId=appengine-api-labs -Dversion=$appengineversion -Dpackaging=jar \

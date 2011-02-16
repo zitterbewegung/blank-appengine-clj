@@ -6,8 +6,8 @@
                  [hiccup "0.3.1"]
                  [appengine "0.2"]
                  ;;These must be manually installed using install.sh
-                 [com.google.appengine/appengine-api-1.0-sdk "1.4.0"]
-                 [com.google.appengine/appengine-api-labs "1.4.0"]] 
+                 [com.google.appengine/appengine-api-1.0-sdk "1.4.2"]
+                 [com.google.appengine/appengine-api-labs "1.4.2"]] 
   :dev-dependencies [[swank-clojure "1.2.1"]
                      [ring/ring-jetty-adapter "0.2.0"]
                      [com.google.appengine/appengine-local-runtime "1.3.5"]
