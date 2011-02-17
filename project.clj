@@ -10,7 +10,7 @@
                  [com.google.appengine/appengine-api-labs "1.4.2"]] 
   :dev-dependencies [[swank-clojure "1.2.1"]
                      [ring/ring-jetty-adapter "0.2.0"]
-                     [com.google.appengine/appengine-local-runtime "1.3.5"]
-                    [com.google.appengine/appengine-api-stubs "1.3.5"]]
+                     [com.google.appengine/appengine-local-runtime "1.4.2"]
+                    [com.google.appengine/appengine-api-stubs "1.4.2"]]
   :compile-path "war/WEB-INF/classes"
   :library-path "war/WEB-INF/lib")
